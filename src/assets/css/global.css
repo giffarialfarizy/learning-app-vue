@@ -1,5 +1,6 @@
 /* https://meyerweb.com/eric/tools/css/reset/ */
 @import 'default/reset.min.css';
+@import 'default/variables.css';
 @import 'default/base.css';
 @import 'components/components.css';
 @import 'utilities/utilities.css';

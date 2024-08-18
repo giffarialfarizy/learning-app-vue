@@ -2,4 +2,6 @@
 
 body {
   font-family: 'Noto Sans', Arial, Helvetica, Verdana, Tahoma, 'Trebuchet MS', sans-serif;
+  color: var(--text);
+  background-color: var(--whitish);
 }
