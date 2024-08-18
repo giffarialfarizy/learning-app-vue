@@ -8,5 +8,7 @@ import LitNavbar from './components/LitNavbar.vue'
     <LitNavbar />
   </header>
 
-  <RouterView />
+  <div class="container">
+    <RouterView />
+  </div>
 </template>
