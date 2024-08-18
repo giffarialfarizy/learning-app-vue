@@ -20,7 +20,9 @@
             <RouterLink class="nav-link" :class="{ active: isActive('/') }" to="/">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/link">Link</RouterLink>
+            <RouterLink class="nav-link" :class="{ active: isActive('/about') }" to="/about">
+              About
+            </RouterLink>
           </li>
           <li
             class="nav-item dropdown"
