@@ -1,0 +1,33 @@
+# Ignore node_modules
+node_modules
+ 
+# Ignore build output
+dist
+ 
+# Ignore some configurations
+.browserslistrc
+.env
+.gitignore
+.prettierignore
+ 
+# Ignore vendor files
+public/css
+public/font
+public/fonts
+public/js
+
+# Ignore minified css
+*.min.css
+ 
+# Ignore images
+*.gif
+*.ico
+*.jpeg
+*.jpg
+*.png
+*.svg
+
+# Ignore lock files
+*package-lock.json
+*pnpm-lock.yaml
+*yarn.lock
