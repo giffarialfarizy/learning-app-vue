@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="container-fluid">
-      <RouterLink class="navbar-brand" to="/">Navbar</RouterLink>
+      <RouterLink class="navbar-brand" to="/"> Navbar </RouterLink>
       <!-- Toggle button -->
       <button
         class="navbar-toggler"
@@ -17,7 +17,9 @@
       <div :class="['navbar-collapse', { show: !isCollapsed }]" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <RouterLink class="nav-link" :class="{ active: isActive('/') }" to="/">Home</RouterLink>
+            <RouterLink class="nav-link" :class="{ active: isActive('/') }" to="/">
+              Home
+            </RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" :class="{ active: isActive('/about') }" to="/about">
