@@ -31,18 +31,17 @@
             @mouseenter="toggleDropdown(true)"
             @mouseleave="toggleDropdown(false)"
           >
-            <RouterLink
+            <button
               class="nav-link dropdown-toggle"
-              to="#"
               role="button"
-              aria-expanded="dropdownOpen ? 'true' : 'false'"
+              :aria-expanded="dropdownOpen ? 'true' : 'false'"
             >
               Dropdown
-            </RouterLink>
+            </button>
             <ul class="dropdown-menu" :class="{ show: dropdownOpen }">
-              <li><RouterLink class="dropdown-item" to="/action">Action</RouterLink></li>
+              <li><RouterLink class="dropdown-item" to="/action">Page A</RouterLink></li>
               <li>
-                <RouterLink class="dropdown-item" to="/another-action">Another action</RouterLink>
+                <RouterLink class="dropdown-item" to="/another-action">Page B</RouterLink>
               </li>
               <li><hr class="dropdown-divider" /></li>
               <li>
