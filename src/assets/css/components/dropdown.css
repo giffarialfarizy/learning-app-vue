@@ -3,12 +3,12 @@
   position: relative;
 }
 
-.dropdown-divider {
+.dropdown_divider {
   border: none;
   border-top: 1px solid var(--divider);
 }
 
-.dropdown-item {
+.dropdown_item {
   display: block;
   padding: 0.5rem 1.5rem;
   color: var(--text);
@@ -21,14 +21,14 @@
   border: 0;
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus {
+.dropdown_item:hover,
+.dropdown_item:focus {
   background-color: var(--bg-hover);
   color: var(--text);
   text-decoration: none;
 }
 
-.dropdown-menu {
+.dropdown_menu {
   position: absolute;
   top: 95%;
   left: 0;
@@ -45,11 +45,11 @@
   border-radius: 0.25rem;
 }
 
-.dropdown-menu.show {
+.dropdown_menu.show {
   display: block;
 }
 
-.dropdown-toggle::after {
+.dropdown_toggle::after {
   display: inline-block;
   content: '';
   margin-left: 0.255em;
