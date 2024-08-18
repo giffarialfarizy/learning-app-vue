@@ -39,7 +39,7 @@
               Dropdown
             </button>
             <ul class="dropdown_menu" :class="{ show: dropdownOpen }">
-              <li><RouterLink class="dropdown_item" to="/action">Page A</RouterLink></li>
+              <li><RouterLink class="dropdown_item" to="/typography">Typography</RouterLink></li>
               <li>
                 <RouterLink class="dropdown_item" to="/another-action">Page B</RouterLink>
               </li>
@@ -72,7 +72,32 @@
   </nav>
 </template>
 
-<script>
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+// Reactive state
+const isCollapsed = ref(true)
+const dropdownOpen = ref(false)
+const searchQuery = ref('')
+
+// Methods
+const toggleNavbar = () => {
+  isCollapsed.value = !isCollapsed.value
+}
+
+const toggleDropdown = (open: boolean) => {
+  dropdownOpen.value = open
+}
+
+const isActive = (routePath: string) => {
+  return route.path === routePath
+}
+</script>
+
+<!-- <script>
 export default {
   data() {
     return {
@@ -93,7 +118,7 @@ export default {
     }
   }
 }
-</script>
+</script> -->
 
 <style scoped>
 /* Include the custom CSS defined earlier here, or import an external CSS file */
