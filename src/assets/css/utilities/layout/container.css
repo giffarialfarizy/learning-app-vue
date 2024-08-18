@@ -1,0 +1,48 @@
+/* Container class */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Responsive max-width for different breakpoints */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px; /* Equivalent to sm:max-w-md */
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px; /* Equivalent to md:max-w-lg */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px; /* Equivalent to lg:max-w-xl */
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px; /* Equivalent to xl:max-w-2xl */
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px; /* Equivalent to 2xl:max-w-3xl */
+  }
+}
+
+/* Bootstrap style */
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
