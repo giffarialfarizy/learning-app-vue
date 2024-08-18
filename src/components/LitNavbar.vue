@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="container-fluid">
-      <RouterLink class="navbar-brand" to="/"> Navbar </RouterLink>
+      <RouterLink class="navbar-brand" to="/">Navbar</RouterLink>
       <!-- Toggle button -->
       <button
         class="navbar-toggler"
