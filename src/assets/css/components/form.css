@@ -6,9 +6,9 @@
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: var(--whitish);
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid var(--divider);
   border-radius: 0.25rem;
   transition:
     border-color 0.15s ease-in-out,
@@ -17,8 +17,7 @@
 
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.1rem var(--bg-hover);
+  outline: none;
 }

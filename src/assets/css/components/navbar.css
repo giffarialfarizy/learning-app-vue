@@ -11,35 +11,10 @@
   padding-block: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
+  color: var(--primary);
   line-height: inherit;
   white-space: nowrap;
   text-decoration: none;
-}
-
-.navbar-toggler {
-  display: none;
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  cursor: pointer;
-}
-
-@media (max-width: 1024px) {
-  .navbar-toggler {
-    display: inline-block;
-  }
-}
-
-.navbar-toggler-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  background-color: var(--text);
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1.5' d='M4.5 12h15m-15 5.77h15M4.5 6.23h15'/%3E%3C/svg%3E");
-  mask-size: cover;
 }
 
 .navbar-collapse {
@@ -50,7 +25,6 @@
   justify-content: end;
 }
 
-/* Toggler Button Styles for Small Screens */
 @media (max-width: 1024px) {
   .navbar-collapse {
     display: none;
@@ -60,14 +34,6 @@
     display: flex;
     justify-content: center;
   }
-}
-
-/* Navbar Nav Styles */
-.navbar-nav {
-  display: flex;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
 }
 
 .nav-item {
@@ -94,4 +60,37 @@
 .nav-link.disabled {
   color: #6c757d;
   pointer-events: none;
+}
+
+.navbar-nav {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-toggler {
+  display: none;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .navbar-toggler {
+    display: inline-block;
+  }
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: var(--text);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1.5' d='M4.5 12h15m-15 5.77h15M4.5 6.23h15'/%3E%3C/svg%3E");
+  mask-size: cover;
 }
