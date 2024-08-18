@@ -1,4 +1,4 @@
-/* Basic Navbar Styles */
+/* Basic Navbar Styles for Mobile */
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -18,21 +18,37 @@
 }
 
 .navbar_collapse {
-  display: flex;
+  display: none;
   flex-basis: auto;
   flex-grow: 1;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .navbar_collapse {
-    display: none;
-  }
-
-  .navbar_collapse.show {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+  }
+}
+
+.navbar_collapse.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar_nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@media (min-width: 1024px) {
+  .navbar_nav {
+    flex-direction: row;
   }
 }
 
@@ -45,6 +61,13 @@
   padding: 0.5rem 1rem;
   color: var(--text);
   text-decoration: none;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .navbar_nav_link {
+    text-align: left;
+  }
 }
 
 .navbar_nav_link:hover,
@@ -62,15 +85,8 @@
   pointer-events: none;
 }
 
-.navbar_nav {
-  display: flex;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
 .navbar_toggler {
-  display: none;
+  display: inline-block;
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
@@ -80,9 +96,9 @@
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .navbar_toggler {
-    display: inline-block;
+    display: none;
   }
 }
 
